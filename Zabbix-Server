@@ -1,11 +1,11 @@
 #Zabbix server Docker container
-docker run --name zabbix-server-mysql -t \
-      -e DB_SERVER_HOST="mysql-server" \
+docker run --name $zabbix-server-mysql -t \
+      -e DB_SERVER_HOST="$mysql-server" \
       -e MYSQL_DATABASE="zabbix" \
       -e MYSQL_USER="zabbix" \
       -e MYSQL_PASSWORD="$mysql-user-passwd" \
       -e MYSQL_ROOT_PASSWORD="$mysql-root-passwd" \
-      -e ZBX_JAVAGATEWAY="zabbix-java-gateway" \
+      -e ZBX_JAVAGATEWAY="$zabbix-java-gateway" \
       --link mysql-server:mysql \
       --link zabbix-java-gateway:zabbix-java-gateway \
       -p 10051:10051 \
