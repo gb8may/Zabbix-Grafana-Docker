@@ -1,5 +1,5 @@
 #Installation os MySql to be used with Zabbix Docker container
-docker run --name mysql-server -t \
+docker run --name $mysql-server -t \
       -e MYSQL_DATABASE="zabbix" \
       -e MYSQL_USER="zabbix" \
       -e MYSQL_PASSWORD="$mysql-user-passwd" \
