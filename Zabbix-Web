@@ -1,10 +1,10 @@
 #Zabbix GUI interface Docker container
-docker run --name $zabbix-web-nginx-mysql -t \
-      -e DB_SERVER_HOST="$mysql-server" \
+docker run --name zabbix-web-nginx-mysql -t \
+      -e DB_SERVER_HOST="mysql-server" \
       -e MYSQL_DATABASE="zabbix" \
       -e MYSQL_USER="zabbix" \
-      -e MYSQL_PASSWORD="$mysql-user-passwd" \
-      -e MYSQL_ROOT_PASSWORD="$mysql-root-passwd" \
+      -e MYSQL_PASSWORD="mysql-user-passwd" \
+      -e MYSQL_ROOT_PASSWORD="mysql-root-passwd" \
       --link mysql-server:mysql \
       --link zabbix-server-mysql:zabbix-server \
       -p 80:80 \
