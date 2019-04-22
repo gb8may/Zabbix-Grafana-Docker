@@ -1,4 +1,4 @@
-#Grafaba Docker container
+#Grafana Docker container
 docker run \
   -d \
   -p 3000:3000 \
