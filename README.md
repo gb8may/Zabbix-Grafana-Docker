@@ -13,5 +13,4 @@ After start grafana, access the container and install zabbix plugin:
 - docker exec -it grafana bash
 - grafana-cli plugins install alexanderzobnin-zabbix-app
 
-Access Grafana via browser on port 3000
-Access Zabbix Web via browser on port 80
+Access Grafana via browser on port 3000, and Zabbix Web via browser on port 80
