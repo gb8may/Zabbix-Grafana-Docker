@@ -2,11 +2,11 @@
 
 Start container in this order:
 
-- 1 - MySql
-- 2 - Gateway
-- 3 - Zabbix Server
-- 4 - Zabbix Web
-- 5 - Grafana
+- MySql
+- Gateway
+- Zabbix Server
+- Zabbix Web
+- Grafana
 
 After start grafana, access the container and install zabbix plugin:
 
